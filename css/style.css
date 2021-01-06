@@ -1,0 +1,112 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    width: 60vw;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), /* gradient over background img so cal stands out*/
+    url(https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
+}
+
+#calculator {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 320px; 
+    height: 520px; 
+    background-color: #eaedef;
+}
+
+#result {
+    height: 120px; 
+}
+
+#keyboard {
+    height: 400px; 
+}
+
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px; 
+    padding-top: 20px; 
+    font-size: 15px; 
+    color: #919191;  
+}
+
+#output {
+    text-align: right; 
+    height: 60px; 
+    margin: 10px 20px; 
+    font-size: 30px;
+}
+
+.operator, 
+.number, 
+.empty {
+    border-radius: 50%;
+    border-width: 0;
+    width: 50px;
+    height: 50px; 
+    margin: 15px; 
+    float: left; 
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number, 
+.empty {
+    background-color: #eaedef;
+}
+
+.number, 
+.operator {
+    cursor: pointer;
+}
+
+.operator:active, 
+.number:active {
+    box-shadow: 5px 4px 8px rgb(165, 165, 165) inset;
+    font-size: 13px;
+}
+
+.operator:focus, 
+.number:focus {
+   outline:none;
+}
+
+.operator {
+    background: lightgray;
+}
+/* change button color using nth-child every fourth element is an operator*/
+button:nth-child(4){
+    font-size: 20px; 
+    background-color: rgb(159, 194, 194); 
+}
+
+button:nth-child(8){
+    font-size: 20px; 
+    background-color: rgb(159, 194, 194); 
+}
+
+button:nth-child(12){
+    font-size: 20px; 
+    background-color: rgb(159, 194, 194); 
+}
+
+button:nth-child(16){
+    font-size: 20px; 
+    background-color: rgb(159, 194, 194) 
+}
+
+button:nth-child(20){
+    font-size: 20px; 
+    background-color: rgb(159, 194, 194); 
+}
